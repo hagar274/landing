@@ -36,7 +36,9 @@ scrollRevealOption().reveal(".header_content .header_btn", {
     delay: 1500,
 });
 
-scrollRevealOption().reveal(".explore_image img", {
+
+
+scrollRevealOptionc().reveal(".explore_image img", {
     ...scrollRevealOption,
     origin: "left",
 });
@@ -60,7 +62,7 @@ scrollRevealOption().reveal(".banner_card", {
 
 scrollRevealOption().reveal(".chef_image img", {
     ...scrollRevealOption,
-    origin: "right"
+    origin: "right",
 });
 scrollRevealOption().reveal(".chef_content .section_header", {
     ...scrollRevealOption,
@@ -68,7 +70,7 @@ scrollRevealOption().reveal(".chef_content .section_header", {
 })
 ;scrollRevealOption().reveal(".chef_content .section_description", {
     ...scrollRevealOption,
-    delay: 500,
+    delay: 1000,
 });
 ;scrollRevealOption().reveal(".chef_list li", {
     ...scrollRevealOption,
@@ -76,10 +78,14 @@ scrollRevealOption().reveal(".chef_content .section_header", {
     interval: 500,
 });
 
+
+
+
+
 let swiper = new Swiper(".swiper", {
     loop: true,
 
     pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-pagination",
     },
 });
